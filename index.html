@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevBlog - Latest Blog Posts</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+  <!-- ICON CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <div class="logo">DevBlog</div>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Categories</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <button class="menu-btn" onclick="toggleMenu()">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileMenu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Categories</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container">
+    <div class="title-section">
+      <h1>Latest Blog Posts</h1>
+      <p>Stay updated with the latest articles on web development, design, and technology trends.</p>
+    </div>
+
+    <div class="grid" id="blogContainer">
+      <!-- Blog cards get inserted here via JS -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div>
+        <h2 class="footer-title">DevBlog</h2>
+        <p class="footer-text">Sharing knowledge and insights about web development and technology.</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i data-lucide="facebook"></i></a>
+        <a href="#"><i data-lucide="twitter"></i></a>
+        <a href="#"><i data-lucide="instagram"></i></a>
+        <a href="#"><i data-lucide="linkedin"></i></a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2023 DevBlog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
